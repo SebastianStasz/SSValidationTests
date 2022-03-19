@@ -13,10 +13,10 @@ struct StartView: View {
     @StateObject private var viewModel = StartVM()
 
     var body: some View {
-        VStack {
-            InputField("Text", viewModel: viewModel.textInput)
-            InputField("Integer", viewModel: viewModel.intInput)
-            InputField("Double", viewModel: viewModel.doubleInput)
+        VStack(spacing: 24) {
+            SampleInput("Text", prompt: "Some text", viewModel: viewModel.textInput)
+            SampleInput("Integer", prompt: "10", viewModel: viewModel.intInput)
+            SampleInput("Double", prompt: "20.0", viewModel: viewModel.doubleInput)
         }
         .textFieldStyle(.roundedBorder)
         .padding()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92B22A6E27E64A2D00D355E1 /* SampleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B22A6D27E64A2D00D355E1 /* SampleInput.swift */; };
 		92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */; };
 		92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8C27E63E5500D03047 /* StartView.swift */; };
 		92CC3C8F27E63E5600D03047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CC3C8E27E63E5600D03047 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92B22A6D27E64A2D00D355E1 /* SampleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInput.swift; sourceTree = "<group>"; };
 		92CC3C8727E63E5500D03047 /* SSValidationTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSValidationTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsApp.swift; sourceTree = "<group>"; };
 		92CC3C8C27E63E5500D03047 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92B22A6C27E64A0700D355E1 /* CustomInputField */ = {
+			isa = PBXGroup;
+			children = (
+				92B22A6D27E64A2D00D355E1 /* SampleInput.swift */,
+			);
+			path = CustomInputField;
+			sourceTree = "<group>";
+		};
 		92CC3C7E27E63E5500D03047 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */,
+				92B22A6C27E64A0700D355E1 /* CustomInputField */,
 				92CC3C9C27E63EC000D03047 /* StartView */,
 				92CC3C8E27E63E5600D03047 /* Assets.xcassets */,
 				92CC3C9027E63E5600D03047 /* Preview Content */,
@@ -172,6 +183,7 @@
 			files = (
 				92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */,
 				92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */,
+				92B22A6E27E64A2D00D355E1 /* SampleInput.swift in Sources */,
 				92CC3C9B27E63E8F00D03047 /* StartVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
