@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */; };
-		92CC3C8D27E63E5500D03047 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8C27E63E5500D03047 /* ContentView.swift */; };
+		92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8C27E63E5500D03047 /* StartView.swift */; };
 		92CC3C8F27E63E5600D03047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CC3C8E27E63E5600D03047 /* Assets.xcassets */; };
 		92CC3C9227E63E5600D03047 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CC3C9127E63E5600D03047 /* Preview Assets.xcassets */; };
+		92CC3C9B27E63E8F00D03047 /* StartVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C9A27E63E8F00D03047 /* StartVM.swift */; };
+		92CC3C9F27E63ECD00D03047 /* SSValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 92CC3C9E27E63ECD00D03047 /* SSValidation */; };
+		92CC3CA227E63F0300D03047 /* SSUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 92CC3CA127E63F0300D03047 /* SSUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92CC3C8727E63E5500D03047 /* SSValidationTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSValidationTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsApp.swift; sourceTree = "<group>"; };
-		92CC3C8C27E63E5500D03047 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92CC3C8C27E63E5500D03047 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		92CC3C8E27E63E5600D03047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CC3C9127E63E5600D03047 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92CC3C9927E63E8100D03047 /* SSValidation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SSValidation; path = ../SSValidation; sourceTree = "<group>"; };
+		92CC3C9A27E63E8F00D03047 /* StartVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVM.swift; sourceTree = "<group>"; };
+		92CC3CA027E63EFB00D03047 /* SSUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SSUtils; path = ../SSUtils; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CC3CA227E63F0300D03047 /* SSUtils in Frameworks */,
+				92CC3C9F27E63ECD00D03047 /* SSValidation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +43,11 @@
 		92CC3C7E27E63E5500D03047 = {
 			isa = PBXGroup;
 			children = (
+				92CC3CA027E63EFB00D03047 /* SSUtils */,
+				92CC3C9927E63E8100D03047 /* SSValidation */,
 				92CC3C8927E63E5500D03047 /* SSValidationTests */,
 				92CC3C8827E63E5500D03047 /* Products */,
+				92CC3C9D27E63ECD00D03047 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */,
-				92CC3C8C27E63E5500D03047 /* ContentView.swift */,
+				92CC3C9C27E63EC000D03047 /* StartView */,
 				92CC3C8E27E63E5600D03047 /* Assets.xcassets */,
 				92CC3C9027E63E5600D03047 /* Preview Content */,
 			);
@@ -65,6 +76,22 @@
 				92CC3C9127E63E5600D03047 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92CC3C9C27E63EC000D03047 /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				92CC3C8C27E63E5500D03047 /* StartView.swift */,
+				92CC3C9A27E63E8F00D03047 /* StartVM.swift */,
+			);
+			path = StartView;
+			sourceTree = "<group>";
+		};
+		92CC3C9D27E63ECD00D03047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,8 +108,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				92CC3CA627E63F2F00D03047 /* PBXTargetDependency */,
+				92CC3CA427E63F2C00D03047 /* PBXTargetDependency */,
 			);
 			name = SSValidationTests;
+			packageProductDependencies = (
+				92CC3C9E27E63ECD00D03047 /* SSValidation */,
+				92CC3CA127E63F0300D03047 /* SSUtils */,
+			);
 			productName = SSValidationTests;
 			productReference = 92CC3C8727E63E5500D03047 /* SSValidationTests.app */;
 			productType = "com.apple.product-type.application";
@@ -137,12 +170,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92CC3C8D27E63E5500D03047 /* ContentView.swift in Sources */,
+				92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */,
 				92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */,
+				92CC3C9B27E63E8F00D03047 /* StartVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92CC3CA427E63F2C00D03047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 92CC3CA327E63F2C00D03047 /* SSUtils */;
+		};
+		92CC3CA627E63F2F00D03047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 92CC3CA527E63F2F00D03047 /* SSValidation */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		92CC3C9327E63E5600D03047 /* Debug */ = {
@@ -341,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92CC3C9E27E63ECD00D03047 /* SSValidation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSValidation;
+		};
+		92CC3CA127E63F0300D03047 /* SSUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSUtils;
+		};
+		92CC3CA327E63F2C00D03047 /* SSUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSUtils;
+		};
+		92CC3CA527E63F2F00D03047 /* SSValidation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSValidation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92CC3C7F27E63E5500D03047 /* Project object */;
 }

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SSUtils",
+        "repositoryURL": "https://github.com/SebastianStasz/SSUtils",
+        "state": {
+          "branch": null,
+          "revision": "7062617f4161b540765149ee418d1895839eda9e",
+          "version": "1.0.13"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
