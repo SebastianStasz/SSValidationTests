@@ -8,13 +8,13 @@
 import SwiftUI
 import SSValidation
 
-struct SampleInput: View {
+struct SampleInput<T>: View {
 
     private let title: String
     private let prompt: String
-    @ObservedObject private var viewModel: InputVM
+    @ObservedObject private var viewModel: InputVM<T>
 
-    init(_ title: String, prompt: String, viewModel: InputVM) {
+    init(_ title: String, prompt: String, viewModel: InputVM<T>) {
         self.title = title
         self.prompt = prompt
         self.viewModel = viewModel
@@ -31,7 +31,7 @@ struct SampleInput: View {
                 InputField(title, viewModel: viewModel, prompt: prompt)
                     .textFieldStyle(.roundedBorder)
             }
-            if let message = viewModel.message {
+            if let message = viewModel.validationMessage {
                 Text(message)
                     .font(.caption2)
                     .foregroundColor(.red)
@@ -44,7 +44,7 @@ struct SampleInput: View {
 
 struct SampleInput_Previews: PreviewProvider {
     static var previews: some View {
-        SampleInput("Double", prompt: "20.0", viewModel: InputVM())
+        SampleInput("Double", prompt: "20.0", viewModel: DoubleInputVM())
             .padding().previewLayout(.sizeThatFits)
     }
 }

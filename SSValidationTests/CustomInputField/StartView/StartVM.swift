@@ -19,10 +19,7 @@ final class StartVM: ObservableObject {
     @Published private(set) var model = SampleModel()
 
     init() {
-        Publishers.CombineLatest3(textInput.result(), doubleInput.result(), intInput.result())
-            .sink { [weak self] text, double, int in
-                self?.model = .init(text: text, double: double, int: int)
-            }
-            .store(in: &cancellables)
+        SampleModel.bind(text: textInput, double: doubleInput, int: intInput)
+            .assign(to: &$model)
     }
 }

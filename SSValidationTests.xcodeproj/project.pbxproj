@@ -16,7 +16,19 @@
 		92CC3C9F27E63ECD00D03047 /* SSValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 92CC3C9E27E63ECD00D03047 /* SSValidation */; };
 		92CC3CA227E63F0300D03047 /* SSUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 92CC3CA127E63F0300D03047 /* SSUtils */; };
 		92E555BE27E762ED00A5FE10 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555BD27E762ED00A5FE10 /* SampleModel.swift */; };
+		92E555C627E7D26400A5FE10 /* SSValidationTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555C527E7D26400A5FE10 /* SSValidationTestsUITests.swift */; };
+		92E555C827E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555C727E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92E555C927E7D26400A5FE10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92CC3C7F27E63E5500D03047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92CC3C8627E63E5500D03047;
+			remoteInfo = SSValidationTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		92B22A6D27E64A2D00D355E1 /* SampleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInput.swift; sourceTree = "<group>"; };
@@ -29,6 +41,9 @@
 		92CC3C9A27E63E8F00D03047 /* StartVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVM.swift; sourceTree = "<group>"; };
 		92CC3CA027E63EFB00D03047 /* SSUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SSUtils; path = ../SSUtils; sourceTree = "<group>"; };
 		92E555BD27E762ED00A5FE10 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		92E555C327E7D26400A5FE10 /* SSValidationTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSValidationTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E555C527E7D26400A5FE10 /* SSValidationTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsUITests.swift; sourceTree = "<group>"; };
+		92E555C727E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,13 @@
 			files = (
 				92CC3CA227E63F0300D03047 /* SSUtils in Frameworks */,
 				92CC3C9F27E63ECD00D03047 /* SSValidation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E555C027E7D26400A5FE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +81,7 @@
 				92CC3CA027E63EFB00D03047 /* SSUtils */,
 				92CC3C9927E63E8100D03047 /* SSValidation */,
 				92CC3C8927E63E5500D03047 /* SSValidationTests */,
+				92E555C427E7D26400A5FE10 /* SSValidationTestsUITests */,
 				92CC3C8827E63E5500D03047 /* Products */,
 				92CC3C9D27E63ECD00D03047 /* Frameworks */,
 			);
@@ -68,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				92CC3C8727E63E5500D03047 /* SSValidationTests.app */,
+				92E555C327E7D26400A5FE10 /* SSValidationTestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +132,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		92E555C427E7D26400A5FE10 /* SSValidationTestsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92E555C527E7D26400A5FE10 /* SSValidationTestsUITests.swift */,
+				92E555C727E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift */,
+			);
+			path = SSValidationTestsUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +167,24 @@
 			productReference = 92CC3C8727E63E5500D03047 /* SSValidationTests.app */;
 			productType = "com.apple.product-type.application";
 		};
+		92E555C227E7D26400A5FE10 /* SSValidationTestsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E555CB27E7D26400A5FE10 /* Build configuration list for PBXNativeTarget "SSValidationTestsUITests" */;
+			buildPhases = (
+				92E555BF27E7D26400A5FE10 /* Sources */,
+				92E555C027E7D26400A5FE10 /* Frameworks */,
+				92E555C127E7D26400A5FE10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92E555CA27E7D26400A5FE10 /* PBXTargetDependency */,
+			);
+			name = SSValidationTestsUITests;
+			productName = SSValidationTestsUITests;
+			productReference = 92E555C327E7D26400A5FE10 /* SSValidationTestsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +197,10 @@
 				TargetAttributes = {
 					92CC3C8627E63E5500D03047 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					92E555C227E7D26400A5FE10 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 92CC3C8627E63E5500D03047;
 					};
 				};
 			};
@@ -163,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				92CC3C8627E63E5500D03047 /* SSValidationTests */,
+				92E555C227E7D26400A5FE10 /* SSValidationTestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +230,13 @@
 			files = (
 				92CC3C9227E63E5600D03047 /* Preview Assets.xcassets in Resources */,
 				92CC3C8F27E63E5600D03047 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92E555C127E7D26400A5FE10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +255,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92E555BF27E7D26400A5FE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E555C627E7D26400A5FE10 /* SSValidationTestsUITests.swift in Sources */,
+				92E555C827E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -202,6 +274,11 @@
 		92CC3CA627E63F2F00D03047 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 92CC3CA527E63F2F00D03047 /* SSValidation */;
+		};
+		92E555CA27E7D26400A5FE10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92CC3C8627E63E5500D03047 /* SSValidationTests */;
+			targetProxy = 92E555C927E7D26400A5FE10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,6 +457,40 @@
 			};
 			name = Release;
 		};
+		92E555CC27E7D26400A5FE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CV69B5J93R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstaszczyk.SSValidationTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSValidationTests;
+			};
+			name = Debug;
+		};
+		92E555CD27E7D26400A5FE10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CV69B5J93R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstaszczyk.SSValidationTestsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSValidationTests;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -397,6 +508,15 @@
 			buildConfigurations = (
 				92CC3C9627E63E5600D03047 /* Debug */,
 				92CC3C9727E63E5600D03047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E555CB27E7D26400A5FE10 /* Build configuration list for PBXNativeTarget "SSValidationTestsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E555CC27E7D26400A5FE10 /* Debug */,
+				92E555CD27E7D26400A5FE10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
