@@ -42,7 +42,7 @@ struct SampleInput: View {
 
 struct SampleInput_Previews: PreviewProvider {
     static var previews: some View {
-        SampleInput("Double", prompt: "20.0", viewModel: InputVM(type: .double))
+        SampleInput("Double", prompt: "20.0", viewModel: InputVM())
             .padding().previewLayout(.sizeThatFits)
     }
 }
