@@ -29,16 +29,16 @@ struct StartView: View {
     }
 
     private var textResult: String {
-        viewModel.sampleModel.textValue ?? ""
+        viewModel.textInput.result ?? ""
     }
 
     private var doubleResult: String {
-        guard let double = viewModel.sampleModel.doubleValue else { return "" }
+        guard let double = viewModel.doubleInput.result else { return "" }
         return double.asString
     }
 
     private var intResult: String {
-        guard let int = viewModel.sampleModel.intValue else { return "" }
+        guard let int = viewModel.intInput.result else { return "" }
         return int.asString
     }
 }

@@ -12,7 +12,7 @@ struct SampleInput: View {
 
     private let title: String
     private let prompt: String
-    private var viewModel: InputVM
+    @ObservedObject private var viewModel: InputVM
 
     init(_ title: String, prompt: String, viewModel: InputVM) {
         self.title = title
@@ -21,7 +21,7 @@ struct SampleInput: View {
     }
 
     var body: some View {
-        VStack(spacing: 6) {
+        VStack(alignment: .leading, spacing: 6) {
             VStack(alignment: .leading, spacing: 3) {
                 Text(title)
                     .textCase(.uppercase)
@@ -31,8 +31,10 @@ struct SampleInput: View {
                 InputField(title, viewModel: viewModel, prompt: prompt)
                     .textFieldStyle(.roundedBorder)
             }
-            if let message = viewModel.validationMessage {
+            if let message = viewModel.message {
                 Text(message)
+                    .font(.caption2)
+                    .foregroundColor(.red)
             }
         }
     }
