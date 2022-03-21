@@ -1,26 +1,18 @@
 //
-//  SSValidationUnitTests.swift
+//  IntInputBaseTests.swift
 //  SSValidationUnitTests
 //
 //  Created by sebastianstaszczyk on 21/03/2022.
 //
 
-import Combine
 import XCTest
 @testable import SSValidation
 
-class SSValidationUnitTests: XCTestCase {
+final class IntInputBaseTests: XCTestCase, InputTestSteps {
 
-    private var cancellables: Set<AnyCancellable> = []
-    private var result: String?
-    private var doubleInput: DoubleInputVM = .init()
+    var input: InputVM<Int>!
 
-    override func setUpWithError() throws {
-        doubleInput.$validationMessage.sink { [unowned self] result in
-            self.result = result
-        }
-        .store(in: &cancellables)
-    }
+    // MARK: - Tests
 
     func test_drop_first() throws {
         // Given: The field should not be empty, and should skip the first validation.
@@ -86,34 +78,16 @@ class SSValidationUnitTests: XCTestCase {
         // Then: Validation message should not be presented
         hasNoValidationMessage()
 
-        // and the result should be "10.0".
+        // and the result should be "10".
         resultValue(is: 10)
     }
+    
 }
 
-private extension SSValidationUnitTests {
+// MARK: - Steps
 
+private extension IntInputBaseTests {
     func initializeWithSettings(_ settings: InputSettings) {
-        doubleInput = .init(with: settings)
-    }
-
-    func enterText(_ text: String) {
-        doubleInput.textInput = text
-    }
-
-    func resultIsNil() {
-        resultValue(is: nil)
-    }
-
-    func resultValue(is value: Double?) {
-        XCTAssertEqual(doubleInput.resultValue, value)
-    }
-
-    func hasNoValidationMessage() {
-        XCTAssertEqual(doubleInput.validationMessage, nil)
-    }
-
-    func hasValidationMessage(_ message: String) {
-        XCTAssertEqual(doubleInput.validationMessage, message)
+        input = IntInputVM(with: settings)
     }
 }

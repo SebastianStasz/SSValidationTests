@@ -12,7 +12,10 @@
 		92AFE6C127E8660B006F8AE6 /* IntInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C027E8660B006F8AE6 /* IntInputTests.swift */; };
 		92AFE6C327E8662B006F8AE6 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C227E8662B006F8AE6 /* Steps.swift */; };
 		92AFE6C527E867B8006F8AE6 /* TextInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C427E867B8006F8AE6 /* TextInputTests.swift */; };
-		92AFE6CD27E86EF6006F8AE6 /* SSValidationUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6CC27E86EF6006F8AE6 /* SSValidationUnitTests.swift */; };
+		92AFE6CD27E86EF6006F8AE6 /* DoubleInputBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6CC27E86EF6006F8AE6 /* DoubleInputBaseTests.swift */; };
+		92AFE6D627E896A6006F8AE6 /* InputTestSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6D527E896A6006F8AE6 /* InputTestSteps.swift */; };
+		92AFE6D827E89732006F8AE6 /* IntInputBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6D727E89732006F8AE6 /* IntInputBaseTests.swift */; };
+		92AFE6DA27E897BC006F8AE6 /* TextInputBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6D927E897BC006F8AE6 /* TextInputBaseTests.swift */; };
 		92B22A6E27E64A2D00D355E1 /* SampleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B22A6D27E64A2D00D355E1 /* SampleInput.swift */; };
 		92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */; };
 		92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8C27E63E5500D03047 /* StartView.swift */; };
@@ -53,7 +56,10 @@
 		92AFE6C227E8662B006F8AE6 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
 		92AFE6C427E867B8006F8AE6 /* TextInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTests.swift; sourceTree = "<group>"; };
 		92AFE6CA27E86EF6006F8AE6 /* SSValidationUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSValidationUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92AFE6CC27E86EF6006F8AE6 /* SSValidationUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationUnitTests.swift; sourceTree = "<group>"; };
+		92AFE6CC27E86EF6006F8AE6 /* DoubleInputBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleInputBaseTests.swift; sourceTree = "<group>"; };
+		92AFE6D527E896A6006F8AE6 /* InputTestSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTestSteps.swift; sourceTree = "<group>"; };
+		92AFE6D727E89732006F8AE6 /* IntInputBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntInputBaseTests.swift; sourceTree = "<group>"; };
+		92AFE6D927E897BC006F8AE6 /* TextInputBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputBaseTests.swift; sourceTree = "<group>"; };
 		92B22A6D27E64A2D00D355E1 /* SampleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInput.swift; sourceTree = "<group>"; };
 		92CC3C8727E63E5500D03047 /* SSValidationTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSValidationTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsApp.swift; sourceTree = "<group>"; };
@@ -100,7 +106,10 @@
 		92AFE6CB27E86EF6006F8AE6 /* SSValidationUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				92AFE6CC27E86EF6006F8AE6 /* SSValidationUnitTests.swift */,
+				92AFE6CC27E86EF6006F8AE6 /* DoubleInputBaseTests.swift */,
+				92AFE6D727E89732006F8AE6 /* IntInputBaseTests.swift */,
+				92AFE6D927E897BC006F8AE6 /* TextInputBaseTests.swift */,
+				92AFE6D527E896A6006F8AE6 /* InputTestSteps.swift */,
 			);
 			path = SSValidationUnitTests;
 			sourceTree = "<group>";
@@ -328,7 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92AFE6CD27E86EF6006F8AE6 /* SSValidationUnitTests.swift in Sources */,
+				92AFE6D627E896A6006F8AE6 /* InputTestSteps.swift in Sources */,
+				92AFE6CD27E86EF6006F8AE6 /* DoubleInputBaseTests.swift in Sources */,
+				92AFE6DA27E897BC006F8AE6 /* TextInputBaseTests.swift in Sources */,
+				92AFE6D827E89732006F8AE6 /* IntInputBaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
