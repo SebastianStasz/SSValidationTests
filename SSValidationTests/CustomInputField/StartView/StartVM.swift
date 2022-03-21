@@ -10,6 +10,8 @@ import Foundation
 import SSValidation
 
 final class StartVM: ObservableObject {
+    static let shared = StartVM()
+
     private var cancellables: Set<AnyCancellable> = []
 
     @Published var textInput = TextInputVM()
@@ -18,7 +20,7 @@ final class StartVM: ObservableObject {
 
     @Published private(set) var model = SampleModel()
 
-    init() {
+    private init() {
         SampleModel.bind(text: textInput, double: doubleInput, int: intInput)
             .assign(to: &$model)
     }

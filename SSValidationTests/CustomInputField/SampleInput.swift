@@ -30,11 +30,13 @@ struct SampleInput<T>: View {
 
                 InputField(title, viewModel: viewModel, prompt: prompt)
                     .textFieldStyle(.roundedBorder)
+                    .accessibilityIdentifier("\(title)_input_field")
             }
             if let message = viewModel.validationMessage {
                 Text(message)
                     .font(.caption2)
                     .foregroundColor(.red)
+                    .accessibilityIdentifier("\(title)_validation_message")
             }
         }
     }

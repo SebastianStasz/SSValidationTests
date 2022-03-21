@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92AFE6BD27E857F8006F8AE6 /* InputFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6BC27E857F8006F8AE6 /* InputFieldType.swift */; };
+		92AFE6BF27E85825006F8AE6 /* SampleInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6BE27E85825006F8AE6 /* SampleInputView.swift */; };
+		92AFE6C127E8660B006F8AE6 /* IntInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C027E8660B006F8AE6 /* IntInputTests.swift */; };
+		92AFE6C327E8662B006F8AE6 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C227E8662B006F8AE6 /* Steps.swift */; };
+		92AFE6C527E867B8006F8AE6 /* TextInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C427E867B8006F8AE6 /* TextInputTests.swift */; };
 		92B22A6E27E64A2D00D355E1 /* SampleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B22A6D27E64A2D00D355E1 /* SampleInput.swift */; };
 		92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */; };
 		92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8C27E63E5500D03047 /* StartView.swift */; };
@@ -16,8 +21,11 @@
 		92CC3C9F27E63ECD00D03047 /* SSValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 92CC3C9E27E63ECD00D03047 /* SSValidation */; };
 		92CC3CA227E63F0300D03047 /* SSUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 92CC3CA127E63F0300D03047 /* SSUtils */; };
 		92E555BE27E762ED00A5FE10 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555BD27E762ED00A5FE10 /* SampleModel.swift */; };
-		92E555C627E7D26400A5FE10 /* SSValidationTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555C527E7D26400A5FE10 /* SSValidationTestsUITests.swift */; };
-		92E555C827E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555C727E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift */; };
+		92E555C627E7D26400A5FE10 /* DoubleInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555C527E7D26400A5FE10 /* DoubleInputTests.swift */; };
+		92E555D327E7D72400A5FE10 /* SSUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 92E555D227E7D72400A5FE10 /* SSUtils */; };
+		92E555D527E7D72800A5FE10 /* SSValidation in Frameworks */ = {isa = PBXBuildFile; productRef = 92E555D427E7D72800A5FE10 /* SSValidation */; };
+		92E555D627E7D7EB00A5FE10 /* StartVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C9A27E63E8F00D03047 /* StartVM.swift */; };
+		92E555D727E7D7FF00A5FE10 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E555BD27E762ED00A5FE10 /* SampleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92AFE6BC27E857F8006F8AE6 /* InputFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldType.swift; sourceTree = "<group>"; };
+		92AFE6BE27E85825006F8AE6 /* SampleInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInputView.swift; sourceTree = "<group>"; };
+		92AFE6C027E8660B006F8AE6 /* IntInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntInputTests.swift; sourceTree = "<group>"; };
+		92AFE6C227E8662B006F8AE6 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		92AFE6C427E867B8006F8AE6 /* TextInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTests.swift; sourceTree = "<group>"; };
 		92B22A6D27E64A2D00D355E1 /* SampleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInput.swift; sourceTree = "<group>"; };
 		92CC3C8727E63E5500D03047 /* SSValidationTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSValidationTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsApp.swift; sourceTree = "<group>"; };
@@ -42,8 +55,7 @@
 		92CC3CA027E63EFB00D03047 /* SSUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SSUtils; path = ../SSUtils; sourceTree = "<group>"; };
 		92E555BD27E762ED00A5FE10 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		92E555C327E7D26400A5FE10 /* SSValidationTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSValidationTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E555C527E7D26400A5FE10 /* SSValidationTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsUITests.swift; sourceTree = "<group>"; };
-		92E555C727E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92E555C527E7D26400A5FE10 /* DoubleInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleInputTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E555D327E7D72400A5FE10 /* SSUtils in Frameworks */,
+				92E555D527E7D72800A5FE10 /* SSValidation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				92CC3C8C27E63E5500D03047 /* StartView.swift */,
+				92AFE6BE27E85825006F8AE6 /* SampleInputView.swift */,
+				92AFE6BC27E857F8006F8AE6 /* InputFieldType.swift */,
 				92E555BD27E762ED00A5FE10 /* SampleModel.swift */,
 				92CC3C9A27E63E8F00D03047 /* StartVM.swift */,
 			);
@@ -135,8 +151,10 @@
 		92E555C427E7D26400A5FE10 /* SSValidationTestsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				92E555C527E7D26400A5FE10 /* SSValidationTestsUITests.swift */,
-				92E555C727E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift */,
+				92E555C527E7D26400A5FE10 /* DoubleInputTests.swift */,
+				92AFE6C027E8660B006F8AE6 /* IntInputTests.swift */,
+				92AFE6C427E867B8006F8AE6 /* TextInputTests.swift */,
+				92AFE6C227E8662B006F8AE6 /* Steps.swift */,
 			);
 			path = SSValidationTestsUITests;
 			sourceTree = "<group>";
@@ -178,9 +196,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				92E555D127E7D69200A5FE10 /* PBXTargetDependency */,
+				92E555CF27E7D68F00A5FE10 /* PBXTargetDependency */,
 				92E555CA27E7D26400A5FE10 /* PBXTargetDependency */,
 			);
 			name = SSValidationTestsUITests;
+			packageProductDependencies = (
+				92E555D227E7D72400A5FE10 /* SSUtils */,
+				92E555D427E7D72800A5FE10 /* SSValidation */,
+			);
 			productName = SSValidationTestsUITests;
 			productReference = 92E555C327E7D26400A5FE10 /* SSValidationTestsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -250,7 +274,9 @@
 				92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */,
 				92E555BE27E762ED00A5FE10 /* SampleModel.swift in Sources */,
 				92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */,
+				92AFE6BD27E857F8006F8AE6 /* InputFieldType.swift in Sources */,
 				92B22A6E27E64A2D00D355E1 /* SampleInput.swift in Sources */,
+				92AFE6BF27E85825006F8AE6 /* SampleInputView.swift in Sources */,
 				92CC3C9B27E63E8F00D03047 /* StartVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E555C627E7D26400A5FE10 /* SSValidationTestsUITests.swift in Sources */,
-				92E555C827E7D26400A5FE10 /* SSValidationTestsUITestsLaunchTests.swift in Sources */,
+				92AFE6C127E8660B006F8AE6 /* IntInputTests.swift in Sources */,
+				92AFE6C327E8662B006F8AE6 /* Steps.swift in Sources */,
+				92E555D727E7D7FF00A5FE10 /* SampleModel.swift in Sources */,
+				92E555D627E7D7EB00A5FE10 /* StartVM.swift in Sources */,
+				92E555C627E7D26400A5FE10 /* DoubleInputTests.swift in Sources */,
+				92AFE6C527E867B8006F8AE6 /* TextInputTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +309,14 @@
 			isa = PBXTargetDependency;
 			target = 92CC3C8627E63E5500D03047 /* SSValidationTests */;
 			targetProxy = 92E555C927E7D26400A5FE10 /* PBXContainerItemProxy */;
+		};
+		92E555CF27E7D68F00A5FE10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 92E555CE27E7D68F00A5FE10 /* SSUtils */;
+		};
+		92E555D127E7D69200A5FE10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 92E555D027E7D69200A5FE10 /* SSValidation */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,6 +575,22 @@
 			productName = SSUtils;
 		};
 		92CC3CA527E63F2F00D03047 /* SSValidation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSValidation;
+		};
+		92E555CE27E7D68F00A5FE10 /* SSUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSUtils;
+		};
+		92E555D027E7D69200A5FE10 /* SSValidation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSValidation;
+		};
+		92E555D227E7D72400A5FE10 /* SSUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SSUtils;
+		};
+		92E555D427E7D72800A5FE10 /* SSValidation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SSValidation;
 		};

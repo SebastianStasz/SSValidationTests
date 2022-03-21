@@ -10,36 +10,16 @@ import SSValidation
 
 struct StartView: View {
 
-    @StateObject private var viewModel = StartVM()
+    @StateObject private var viewModel = StartVM.shared
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
-            Text("Text result: \(textResult)")
-            Text("Double result: \(doubleResult)")
-            Text("Int result: \(intResult)")
-
-            Spacer()
-
-            SampleInput("Text", prompt: "Some text", viewModel: viewModel.textInput)
-            SampleInput("Double", prompt: "20.0", viewModel: viewModel.doubleInput)
-            SampleInput("Integer", prompt: "10", viewModel: viewModel.intInput)
+        Form {
+            NavigationLink("Text input", destination: SampleInputView(type: .text))
+            NavigationLink("Double input", destination: SampleInputView(type: .double))
+            NavigationLink("Int input", destination: SampleInputView(type: .int))
         }
-        .textFieldStyle(.roundedBorder)
-        .padding()
-    }
-
-    private var textResult: String {
-        viewModel.model.text ?? ""
-    }
-
-    private var doubleResult: String {
-        guard let double = viewModel.model.double else { return "" }
-        return double.asString
-    }
-
-    private var intResult: String {
-        guard let int = viewModel.model.int else { return "" }
-        return int.asString
+        .embedInNavigationView(title: "Input fields")
+        .environmentObject(viewModel)
     }
 }
 
