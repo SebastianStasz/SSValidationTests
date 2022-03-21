@@ -12,6 +12,7 @@
 		92AFE6C127E8660B006F8AE6 /* IntInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C027E8660B006F8AE6 /* IntInputTests.swift */; };
 		92AFE6C327E8662B006F8AE6 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C227E8662B006F8AE6 /* Steps.swift */; };
 		92AFE6C527E867B8006F8AE6 /* TextInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6C427E867B8006F8AE6 /* TextInputTests.swift */; };
+		92AFE6CD27E86EF6006F8AE6 /* SSValidationUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFE6CC27E86EF6006F8AE6 /* SSValidationUnitTests.swift */; };
 		92B22A6E27E64A2D00D355E1 /* SampleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B22A6D27E64A2D00D355E1 /* SampleInput.swift */; };
 		92CC3C8B27E63E5500D03047 /* SSValidationTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */; };
 		92CC3C8D27E63E5500D03047 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC3C8C27E63E5500D03047 /* StartView.swift */; };
@@ -29,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		92AFE6CE27E86EF6006F8AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92CC3C7F27E63E5500D03047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92CC3C8627E63E5500D03047;
+			remoteInfo = SSValidationTests;
+		};
 		92E555C927E7D26400A5FE10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 92CC3C7F27E63E5500D03047 /* Project object */;
@@ -44,6 +52,8 @@
 		92AFE6C027E8660B006F8AE6 /* IntInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntInputTests.swift; sourceTree = "<group>"; };
 		92AFE6C227E8662B006F8AE6 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
 		92AFE6C427E867B8006F8AE6 /* TextInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTests.swift; sourceTree = "<group>"; };
+		92AFE6CA27E86EF6006F8AE6 /* SSValidationUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSValidationUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AFE6CC27E86EF6006F8AE6 /* SSValidationUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationUnitTests.swift; sourceTree = "<group>"; };
 		92B22A6D27E64A2D00D355E1 /* SampleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInput.swift; sourceTree = "<group>"; };
 		92CC3C8727E63E5500D03047 /* SSValidationTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSValidationTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CC3C8A27E63E5500D03047 /* SSValidationTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSValidationTestsApp.swift; sourceTree = "<group>"; };
@@ -59,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		92AFE6C727E86EF6006F8AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92CC3C8427E63E5500D03047 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92AFE6CB27E86EF6006F8AE6 /* SSValidationUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				92AFE6CC27E86EF6006F8AE6 /* SSValidationUnitTests.swift */,
+			);
+			path = SSValidationUnitTests;
+			sourceTree = "<group>";
+		};
 		92B22A6C27E64A0700D355E1 /* CustomInputField */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +121,7 @@
 				92CC3C9927E63E8100D03047 /* SSValidation */,
 				92CC3C8927E63E5500D03047 /* SSValidationTests */,
 				92E555C427E7D26400A5FE10 /* SSValidationTestsUITests */,
+				92AFE6CB27E86EF6006F8AE6 /* SSValidationUnitTests */,
 				92CC3C8827E63E5500D03047 /* Products */,
 				92CC3C9D27E63ECD00D03047 /* Frameworks */,
 			);
@@ -106,6 +132,7 @@
 			children = (
 				92CC3C8727E63E5500D03047 /* SSValidationTests.app */,
 				92E555C327E7D26400A5FE10 /* SSValidationTestsUITests.xctest */,
+				92AFE6CA27E86EF6006F8AE6 /* SSValidationUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +189,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		92AFE6C927E86EF6006F8AE6 /* SSValidationUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92AFE6D027E86EF6006F8AE6 /* Build configuration list for PBXNativeTarget "SSValidationUnitTests" */;
+			buildPhases = (
+				92AFE6C627E86EF6006F8AE6 /* Sources */,
+				92AFE6C727E86EF6006F8AE6 /* Frameworks */,
+				92AFE6C827E86EF6006F8AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92AFE6CF27E86EF6006F8AE6 /* PBXTargetDependency */,
+			);
+			name = SSValidationUnitTests;
+			productName = SSValidationUnitTests;
+			productReference = 92AFE6CA27E86EF6006F8AE6 /* SSValidationUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		92CC3C8627E63E5500D03047 /* SSValidationTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92CC3C9527E63E5600D03047 /* Build configuration list for PBXNativeTarget "SSValidationTests" */;
@@ -219,6 +264,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					92AFE6C927E86EF6006F8AE6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 92CC3C8627E63E5500D03047;
+					};
 					92CC3C8627E63E5500D03047 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -243,11 +292,19 @@
 			targets = (
 				92CC3C8627E63E5500D03047 /* SSValidationTests */,
 				92E555C227E7D26400A5FE10 /* SSValidationTestsUITests */,
+				92AFE6C927E86EF6006F8AE6 /* SSValidationUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		92AFE6C827E86EF6006F8AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92CC3C8527E63E5500D03047 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +324,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		92AFE6C627E86EF6006F8AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AFE6CD27E86EF6006F8AE6 /* SSValidationUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92CC3C8327E63E5500D03047 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +362,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		92AFE6CF27E86EF6006F8AE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92CC3C8627E63E5500D03047 /* SSValidationTests */;
+			targetProxy = 92AFE6CE27E86EF6006F8AE6 /* PBXContainerItemProxy */;
+		};
 		92CC3CA427E63F2C00D03047 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 92CC3CA327E63F2C00D03047 /* SSUtils */;
@@ -321,6 +391,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		92AFE6D127E86EF6006F8AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CV69B5J93R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstaszczyk.SSValidationUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSValidationTests.app/SSValidationTests";
+			};
+			name = Debug;
+		};
+		92AFE6D227E86EF6006F8AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CV69B5J93R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianstaszczyk.SSValidationUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSValidationTests.app/SSValidationTests";
+			};
+			name = Release;
+		};
 		92CC3C9327E63E5600D03047 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -532,6 +638,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		92AFE6D027E86EF6006F8AE6 /* Build configuration list for PBXNativeTarget "SSValidationUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92AFE6D127E86EF6006F8AE6 /* Debug */,
+				92AFE6D227E86EF6006F8AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92CC3C8227E63E5500D03047 /* Build configuration list for PBXProject "SSValidationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

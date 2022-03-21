@@ -1,28 +1,25 @@
 //
-//  DoubleInputTests.swift
-//  SSValidationTestsUITests
+//  SSValidationUnitTests.swift
+//  SSValidationUnitTests
 //
-//  Created by sebastianstaszczyk on 20/03/2022.
+//  Created by sebastianstaszczyk on 21/03/2022.
 //
 
 import Combine
 import XCTest
 @testable import SSValidation
-@testable import SSValidationTests
 
-final class DoubleInputTests: XCTestCase, Steps {
+class SSValidationUnitTests: XCTestCase {
 
-    var app: XCUIApplication!
-
-    private var doubleInput: DoubleInputVM {
-        StartVM.shared.doubleInput
-    }
+    private var cancellables: Set<AnyCancellable> = []
+    private var result: String?
+    private var doubleInput: DoubleInputVM = .init()
 
     override func setUpWithError() throws {
-        continueAfterFailure = false
-        app = XCUIApplication()
-        app.launch()
-        app.staticTexts["Double input"].tap()
+        doubleInput.$validationMessage.sink { [unowned self] result in
+            self.result = result
+        }
+        .store(in: &cancellables)
     }
 
     func test_drop_first() throws {
@@ -74,10 +71,10 @@ final class DoubleInputTests: XCTestCase, Steps {
         // When: We initialize the input field
         initializeWithSettings(settings)
 
-        // and we enter text "abc".
-        textField(enterText: "abc")
+        // and we enter empty text.
+        enterText("")
 
-        // Then: Validation with message "Field can not be empty." should be presented
+        // Then: Validation message "Field can not be empty." should be presented
         hasValidationMessage(ValidationMessage.empty)
 
         // and the result should be nil.
@@ -94,10 +91,10 @@ final class DoubleInputTests: XCTestCase, Steps {
     }
 }
 
-private extension DoubleInputTests {
+private extension SSValidationUnitTests {
 
     func initializeWithSettings(_ settings: InputSettings) {
-        StartVM.shared.doubleInput = .init(with: settings)
+        doubleInput = .init(with: settings)
     }
 
     func enterText(_ text: String) {

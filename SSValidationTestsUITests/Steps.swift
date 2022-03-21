@@ -16,6 +16,10 @@ extension Steps {
         XCTAssert(app.staticTexts[message].exists)
     }
 
+    func textFieldNoValidationMessage() {
+        print(app.descendants(matching: .any)["validation_message_identifier"].label)
+    }
+
     func textField(shouldContains text: String) {
         XCTAssertEqual(textField.value as? String, text)
     }

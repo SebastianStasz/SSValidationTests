@@ -36,7 +36,7 @@ struct SampleInput<T>: View {
                 Text(message)
                     .font(.caption2)
                     .foregroundColor(.red)
-                    .accessibilityIdentifier("\(title)_validation_message")
+                    .accessibilityIdentifier("validation_message_identifier")
             }
         }
     }
