@@ -27,7 +27,7 @@ final class DoubleInputTests: XCTestCase, Steps {
 
     func test_drop_first() throws {
         // Given: The field should not be empty, and should skip the first validation.
-        let settings = InputSettings(dropFirst: true, validator: .notEmpty())
+        let settings = InputSettings(dropFirstValidationMessage: true, validator: .notEmpty())
 
         // When: We initialize the input field.
         initializeWithSettings(settings)
@@ -41,7 +41,7 @@ final class DoubleInputTests: XCTestCase, Steps {
 
     func test_do_not_drop_first() throws {
         // Given: The field should not be empty, and should not skip the first validation.
-        let settings = InputSettings(dropFirst: false, validator: .notEmpty())
+        let settings = InputSettings(dropFirstValidationMessage: false, validator: .notEmpty())
 
         // When: We initialize the input field.
         initializeWithSettings(settings)
@@ -55,7 +55,7 @@ final class DoubleInputTests: XCTestCase, Steps {
 
     func test_always_valid() throws {
         // Given: The field should always be valid, and should not skip the first validation.
-        let settings = InputSettings(dropFirst: false, validator: .alwaysValid())
+        let settings = InputSettings(dropFirstValidationMessage: false, validator: .alwaysValid())
 
         // When: We initialize the input field.
         initializeWithSettings(settings)

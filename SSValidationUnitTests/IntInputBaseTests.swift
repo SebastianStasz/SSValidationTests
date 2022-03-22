@@ -14,9 +14,37 @@ final class IntInputBaseTests: XCTestCase, InputTestSteps {
 
     // MARK: - Tests
 
-    func test_drop_first() throws {
-        // Given: The field should not be empty, and should skip the first validation.
-        let settings = InputSettings(dropFirst: true, validator: .notEmpty())
+    func test_valid_initial_value() throws {
+        // Given: The field should have initial text "123", and should drop the first validation message.
+        let settings = InputSettings(initialValue: "123", dropFirstValidationMessage: true, validator: .notEmpty())
+
+        // When: We initialize the input field.
+        initializeWithSettings(settings)
+
+        // Then: Validation message should not be presented
+        hasNoValidationMessage()
+
+        // and the result should be "123".
+        resultValue(is: 123)
+    }
+
+    func test_invalid_initial_value() throws {
+        // Given: The field should have initial text "123", and should drop the first validation message, and should be no less than 130.
+        let settings = InputSettings(initialValue: "123", dropFirstValidationMessage: true, validator: .notEmpty().andDouble(.notLessThan(130)))
+
+        // When: We initialize the input field.
+        initializeWithSettings(settings)
+
+        // Then: Validation message should not be presented
+        hasNoValidationMessage()
+
+        // and the result should be nill.
+        resultIsNil()
+    }
+
+    func test_drop_first_validation_message() throws {
+        // Given: The field should not be empty, and should skip the first validation message.
+        let settings = InputSettings(dropFirstValidationMessage: true, validator: .notEmpty())
 
         // When: We initialize the input field.
         initializeWithSettings(settings)
@@ -28,9 +56,9 @@ final class IntInputBaseTests: XCTestCase, InputTestSteps {
         resultIsNil()
     }
 
-    func test_do_not_drop_first() throws {
-        // Given: The field should not be empty, and should not skip the first validation.
-        let settings = InputSettings(dropFirst: false, validator: .notEmpty())
+    func test_do_not_drop_first_validation_message() throws {
+        // Given: The field should not be empty, and should not skip the first validation message.
+        let settings = InputSettings(dropFirstValidationMessage: false, validator: .notEmpty())
 
         // When: We initialize the input field.
         initializeWithSettings(settings)
@@ -43,8 +71,8 @@ final class IntInputBaseTests: XCTestCase, InputTestSteps {
     }
 
     func test_always_valid() throws {
-        // Given: The field should always be valid, and should not skip the first validation.
-        let settings = InputSettings(dropFirst: false, validator: .alwaysValid())
+        // Given: The field should always be valid, and should not skip the first validation message.
+        let settings = InputSettings(dropFirstValidationMessage: false, validator: .alwaysValid())
 
         // When: We initialize the input field.
         initializeWithSettings(settings)
