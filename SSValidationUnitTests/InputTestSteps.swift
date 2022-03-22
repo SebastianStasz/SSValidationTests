@@ -17,7 +17,7 @@ protocol InputTestSteps {
 extension InputTestSteps {
 
     func enterText(_ text: String) {
-        input.textInput = text
+        input.setAllowedText(to: text)
     }
 
     func resultIsNil() {

@@ -109,6 +109,23 @@ class DoubleInputBaseTests: XCTestCase, InputTestSteps {
         // and the result should be "10.0".
         resultValue(is: 10)
     }
+
+    func test_result_with_value_with_comma() throws {
+        // Given: The field should not be empty.
+        let settings = InputSettings(validator: .notEmpty())
+
+        // When: We initialize the input field
+        initializeWithSettings(settings)
+
+        // and we enter value "1,23".
+        enterText("1,23")
+
+        // Then: Validation message should not be presented
+        hasNoValidationMessage()
+
+        // and the result should be "1.23".
+        resultValue(is: 1.23)
+    }
 }
 
 // MARK: - Steps
