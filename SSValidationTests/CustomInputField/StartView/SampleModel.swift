@@ -15,11 +15,3 @@ struct SampleModel {
     var double: Double?
     var int: Int?
 }
-
-extension SampleModel {
-    static func bind(text: TextInputVM, double: DoubleInputVM, int: IntInputVM) -> Driver<SampleModel> {
-        Publishers.CombineLatest3(text.result(), double.result(), int.result())
-            .map { SampleModel(text: $0, double: $1, int: $2) }
-            .asDriver
-    }
-}

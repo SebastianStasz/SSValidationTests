@@ -8,11 +8,12 @@
 import Combine
 import Foundation
 import SSValidation
+import SSUtils
 
-final class StartVM: ObservableObject {
+final class StartVM: ObservableObject, CombineHelper {
     static let shared = StartVM()
 
-    private var cancellables: Set<AnyCancellable> = []
+    var cancellables: Set<AnyCancellable> = []
 
     @Published var textInput = TextInputVM()
     @Published var doubleInput = DoubleInputVM()
@@ -21,7 +22,8 @@ final class StartVM: ObservableObject {
     @Published private(set) var model = SampleModel()
 
     private init() {
-        SampleModel.bind(text: textInput, double: doubleInput, int: intInput)
-            .assign(to: &$model)
+        textInput.assignResult(to: \.model.text, on: self)
+        doubleInput.assignResult(to: \.model.double, on: self)
+        intInput.assignResult(to: \.model.int, on: self)
     }
 }
